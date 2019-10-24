@@ -9,11 +9,11 @@ function doubleAll(numbers) {
 }
 
 function absoluteValues(numbers) {
-  const absolutes = [];
+  let absolutes = [];
 
   for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
-    const absolute = number < 0 ? number * -1 : number;
+    absolutes = number < 0 ? number * -1 : number;
   }
 
   return absolutes;
